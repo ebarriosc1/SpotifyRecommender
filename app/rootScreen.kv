@@ -1,0 +1,117 @@
+#:import Window kivy.core.window.Window
+#:import utils kivy.utils
+#:import ShrineMenu libs.menu.ShrineMenu
+
+ScreenManager:
+    rootScreen:
+<rootScreen>:
+    id:main
+    name:'main'
+    bg_color: (1,1,1,.3)
+    highlight_color1jbsidis: [0,0,0,0]
+    highlight_color2jbsidis: (0,0,0,.3)
+    canvas.before:
+        Color:
+            rgba: utils.get_color_from_hex('#65d36e')
+        Rectangle:
+            size: self.size
+            pos: self.pos
+
+    MDTopAppBar:
+        title:"Spotify Recommend Songs"
+        pos_hint: {"top":1}
+        left_action_items:[["/Users/estebanbarrios/Python/Spotify_recommender/Spotify_icon.svg.png"]]
+    FloatLayout:
+        Label:
+            text: "Enter Playlist URI"
+            font_size: 40
+            font_color: [1,1,1,1]
+            pos_hint: {"center_x":.3, "center_y":.83}
+        TextInput:
+            id: playlist_uri
+            #hint_text: "Enter Playlist URI"
+            foreground_color: [1,1,1,1]
+            background_color: [0,0,0,0]
+            background_image: ""
+            background_normal: ""
+            background_active: ""
+            multiline: False
+            font_size: 40
+            size_hint: .7 ,.1 #.06
+            pos_hint: {'center_x':.5, 'center_y':.75} #'center_y':.8
+            canvas.before:
+                Color:
+                    rgba: [0,0,0,.5]
+                RoundedRectangle:
+                    size: self.size
+                    pos: self.pos
+                    radius: 10,
+        Label: 
+            text: "Give it a Playlist Name"
+            pos_hint:{'center_x':0.70, 'center_y':.55}
+            font_size: 40
+        Label: 
+            text: "Enter Number of Songs you want!"
+            pos_hint:{'center_x':0.2, 'center_y':.55}
+            font_size: 40
+        
+        MDBoxLayout:
+            orientation:'horizontal'
+            pos_hint:{"center_x":0.3, "center_y":0.5}
+            Label: 
+            # NEW WIDGET
+            TextInput:
+                id: num_songs
+                #hint_text: "Number of songs Recommeneded"
+                foreground_color: [1,1,1,1]
+                background_color: [0,0,0,0]
+                background_image: ""
+                background_normal: ""
+                background_active: ""
+                multiline: False
+                input_filter:'int'
+                font_size: 40
+                size_hint: .6 ,.1 #.06
+                pos_hint: {'left_x':0.7, 'center_y':.45} #'center_y':.8
+                canvas.before:
+                    Color:
+                        rgba: [0,0,0,.5]
+                    RoundedRectangle:
+                        size: self.size
+                        pos: self.pos
+                        radius: 10,
+            # NEW WIDGET 
+            Label:
+            TextInput:
+                id: playlist_name
+                #hint_text: "Number of songs Recommeneded"
+                foreground_color: [1,1,1,1]
+                background_color: [0,0,0,0]
+                background_image: ""
+                background_normal: ""
+                background_active: ""
+                multiline: False
+                font_size: 40
+                size_hint: .8 ,.1 #.06
+                pos_hint: {'center_x':.75, 'center_y':.45} #'center_y':.8
+                canvas.before:
+                    Color:
+                        rgba: [0,0,0,.5]
+                    RoundedRectangle:
+                        size: self.size
+                        pos: self.pos
+                        radius: 10,
+        MDFloatingActionButton:
+            icon:"database-search"
+            md_bg_color: utils.get_color_from_hex('#6e65d3')
+            pos_hint:{'center_x':0.5, 'center_y':0.1}
+            on_release: 
+                root.runApp()
+#GUI for pop window
+<p>:
+    Label: 
+        text: "Complete! Go check out your new playlist"
+        size_hint: 0.4, .2
+        pos_hint : {"x" : 0.3, "top" : 0.8}
+
+        
