@@ -20,11 +20,14 @@ import os
 import pandas as pd
 import requests
 
-from app.Tools.CreatePlaylist import create_playlist
-from app.Tools.getPlaylistInfo_features import get_features_for_playlist, get_playlist_info
-from app.Tools.getSong_genres import get_song_genres
-from app.Tools.Query import spotify_recommend
-from app.Tools.RecommendSongs import recommend_songs
+
+
+
+from Tools.CreatePlaylist import create_playlist
+from Tools.getPlaylistInfo_features import get_features_for_playlist, get_playlist_info
+from Tools.getSong_genres import get_song_genres
+from Tools.Query import spotify_recommend
+from Tools.RecommendSongs import recommend_songs
 
 
 
