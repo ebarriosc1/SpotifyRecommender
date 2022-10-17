@@ -3,4 +3,4 @@ App to create a playlist of a user defined number of songs to their spotify prof
 
 ### Spotipy 
 <b>Please follow Spotipy instructions on how to create a Username and Client to attempt and run this code.</b>
-[Spotipy](https://spotipy.readthedocs.io/en/master/)
+Here is the link...[Spotipy](https://spotipy.readthedocs.io/en/master/)
