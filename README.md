@@ -4,3 +4,6 @@ App to create a playlist of a user defined number of songs to their spotify prof
 ### Spotipy 
 <b>Please follow Spotipy instructions on how to create a Username and Client to attempt and run this code.</b>
 Here is the link...[Spotipy](https://spotipy.readthedocs.io/en/master/)
+
+
+<img width="801" alt="Screen Shot 2022-10-16 at 6 06 14 PM" src="https://github.com/ebarriosc1/SpotifyRecommender/assets/41806406/22beec4e-3514-4454-8589-1b1adf476e9f">
