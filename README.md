@@ -6,4 +6,4 @@ App to create a playlist of a user defined number of songs to their spotify prof
 Here is the link...[Spotipy](https://spotipy.readthedocs.io/en/master/)
 
 
-<img width="801" alt="Screen Shot 2022-10-16 at 6 06 14 PM" src="https://github.com/ebarriosc1/SpotifyRecommender/assets/41806406/22beec4e-3514-4454-8589-1b1adf476e9f">
+<img width="800" alt="Screen Shot 2022-10-16 at 6 09 17 PM" src="https://github.com/ebarriosc1/SpotifyRecommender/assets/41806406/38a0c0d2-91d3-43ce-a1a4-1007ae18e95c">
